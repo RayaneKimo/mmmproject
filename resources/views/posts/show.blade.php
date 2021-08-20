@@ -14,10 +14,10 @@
         <a href='/posts' class='btn btn-default'> go back </a> 
             
   <h1> Posts </h1>
-<small>Created at :{{$post->created_at}}</small>
+<small>Created at :{!!$post->created_at!!}</small>
 
 <div>
-    {{$post->body}}
+    {!!$post->body!!}
 </div>
 
         </body>

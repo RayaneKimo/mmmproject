@@ -28,7 +28,7 @@
          </div>
          <div >
           {{Form::label('body','Body') }}
-          {{Form::textarea('Body','',[ 'class'=> ['placeholder'=> "title" ]])}}
+          {{Form::textarea('Body','',[ 'id' =>'article-ckeditor' , 'class'=> ['placeholder'=> "title" ]])}}
          </div>
 
          @error('Body')
@@ -41,5 +41,10 @@
           {!! Form::close() !!}
 
          
+
+          
+          <script src={{ asset('ckeditor/ckeditor.js')}}></script> 
+          <script> CKEDITOR.replace('article-ckeditor'); </script>
+
         </body>
 </html> 

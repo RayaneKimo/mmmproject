@@ -13,8 +13,9 @@
         <body>
            @include('posts.messages')
           
+           
         <h1 class="m-12 text-3xl text-red-900 leading-tight"> Just Laravel Posts </h1
-  <h1> Posts </h1>
+
 
 @if(count($posts) > 0 )
 
@@ -32,8 +33,7 @@
 <h3>no posts found </h3>
 @endif
 
-{{$post=["bb"=>"have nice day ", "cc"=>"good by"]}}
-{{$post->bb}}
+
 
         </body>
 </html>
