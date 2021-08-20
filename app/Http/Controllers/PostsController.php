@@ -46,12 +46,12 @@ class PostsController extends Controller
         $post = [  "title"  =>  $request->title,
         "body" => $request->Body
          ];
-        //$post=new Post;
-        //$post->title=$request->input('title');
-        //$post->body=$request->input('Body');
-        //$post->save();
+        $post=new Post;
+        $post->title=$request->input('title');
+        $post->body=$request->input('Body');
+        $post->save();
 
-       $post= Post::create($post);
+    //    $post= Post::create($post);
 
         return redirect('/posts')->with('success','Post created successfuly !!');
 
